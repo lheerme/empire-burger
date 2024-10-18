@@ -1,8 +1,9 @@
+import { Header } from "./components/header";
+
 export function App() {
   return (
     <div>
-      <h1>Hello world</h1>
-      <p className="font-lilita-one">burger</p>
+      <Header />
     </div>
   )
 }

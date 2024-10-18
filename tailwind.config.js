@@ -9,7 +9,13 @@ export default {
       fontFamily: {
         'sans': ['Lato', 'sans-serif'],
         'lilita-one': ['Lilita One', 'sans-serif']
-      }
+      },
+      colors: {
+        'title-black-60': '#635352',
+        'title-black-87': '#34201F',
+        'yellow-layout': '#F59A1B',
+
+      },
     },
   },
   plugins: [],
