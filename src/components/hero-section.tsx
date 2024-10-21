@@ -14,7 +14,7 @@ export function HeroSection() {
         <button className="px-5 py-2.5 text-white bg-red-layout w-fit rounded text-xl font-bold hover:opacity-90 hover:transition-opacity mt-5">Comprar Agora</button>
       </div>
 
-      <div className="flex items-center justify-between gap-4 w-full max-w-[970px] rounded-xl shadow-xl bg-white py-6 px-5 absolute -bottom-12 left-1/2 -translate-x-1/2">
+      <div className="flex items-center justify-between gap-4 w-full max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-5 absolute -bottom-12 left-1/2 -translate-x-1/2">
         <div className="flex items-center gap-4">
           <img src={burgerIcon} alt="burger icon" />
           <div className='max-w-[170px] w-full'>
