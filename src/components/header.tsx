@@ -5,7 +5,7 @@ import whatsappLogo from '../assets/whatsapp-icon.svg'
 
 export function Header() {
   return (
-    <header className="py-1 backdrop-blur fixed w-full border-b-[1px] border-[#3C210C26]">
+    <header className="py-1 backdrop-blur fixed w-full border-b-[1px] border-[#3C210C26] z-[1]">
       <div className="max-w-6xl w-full mx-auto py-1 px-2 flex items-center justify-between">
         <a href="#" className='block w-fit'>
           <img src={logo} alt="Empire Burger logo" />
