@@ -11,11 +11,11 @@ export default {
         'lilita-one': ['Lilita One', 'sans-serif']
       },
       colors: {
-        'title-black-60': '#635352',
         'title-black-87': '#34201F',
+        'title-black-60': '#635352',
+        'title-black-38': '#1D0605',
         'yellow-layout': '#F59A1B',
         'red-layout': '#F43127',
-        'text-layout': '#1D0605E5',
       },
     },
   },

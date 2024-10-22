@@ -5,8 +5,8 @@ import iceCream from '../assets/ice-cream.png'
 export function SpecialOffers() {
   return (
     <section className="max-w-6xl w-full mx-auto px-2">
-      <h2 className="font-lilita-one text-3xl text-text-layout/90 uppercase">Ofertas especiais</h2>
-      <p className="text-text-layout/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
+      <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
+      <p className="text-title-black-38/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
 
       <div className='mt-4 grid grid-cols-3 grid-rows-2 gap-4 lg:gap-[30px]'>
         <div className="w-full max-w-[770px] h-[430px] relative group overflow-hidden rounded-2xl cursor-default row-span-2 col-span-2">
@@ -35,8 +35,8 @@ export function SpecialOffers() {
 
           <div className='size-full relative z-[1] flex justify-between py-4 px-5'>
             <div>
-              <h3 className='font-lilita-one text-2xl text-text-layout/90 uppercase leading-none'>batata</h3>
-              <p className='text-text-layout/70 leading-none'>150kg</p>
+              <h3 className='font-lilita-one text-2xl text-title-black-38/90 uppercase leading-none'>batata</h3>
+              <p className='text-title-black-38/70 leading-none'>150kg</p>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ export function SpecialOffers() {
 
           <div className='size-full relative z-[1] flex justify-between py-4 px-5'>
             <div>
-              <h3 className='font-lilita-one text-2xl text-text-layout/90 uppercase leading-none'>sorvete</h3>
-              <p className='text-text-layout/70 leading-none'>50kg</p>
+              <h3 className='font-lilita-one text-2xl text-title-black-38/90 uppercase leading-none'>sorvete</h3>
+              <p className='text-title-black-38/70 leading-none'>50kg</p>
             </div>
           </div>
         </div>
