@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
 import { HeroSection } from "./components/hero-section";
+import { OpeningHours } from "./components/opening-hours";
 import { SpecialOffers } from "./components/special-offers";
 
 export function App() {
@@ -9,6 +10,7 @@ export function App() {
       <main>
         <HeroSection />
         <SpecialOffers />
+        <OpeningHours />
       </main>
     </>
   )
