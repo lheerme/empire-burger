@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="flex items-center gap-4">
           <img src={burgerIcon} alt="burger icon" />
           <div className='max-w-[170px] w-full'>
-            <h3 className='text-text-layout/90 font-lilita-one text-xl'>Artesanal</h3>
+            <h3 className='text-text-layout/90 font-lilita-one text-xl uppercase'>Artesanal</h3>
             <p className='text-text-layout/70 opacity-70'>Nossas receitas são feitas com todo cuidado</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ export function HeroSection() {
         <div className="flex items-center gap-4">
           <img src={headsetIcon} alt="burger icon" />
           <div className='max-w-[170px] w-full'>
-            <h3 className='text-text-layout/90 font-lilita-one text-xl'>Atendimento</h3>
+            <h3 className='text-text-layout/90 font-lilita-one text-xl uppercase'>Atendimento</h3>
             <p className='text-text-layout/70 opacity-70'>Totalmente personalizado</p>
           </div>
         </div>
@@ -38,7 +38,7 @@ export function HeroSection() {
         <div className="flex items-center gap-4">
           <img src={scooterIcon} alt="burger icon" />
           <div className='max-w-[170px] w-full'>
-            <h3 className='text-text-layout/90 font-lilita-one text-xl'>DELIVERY Speed</h3>
+            <h3 className='text-text-layout/90 font-lilita-one text-xl uppercase'>DELIVERY Speed</h3>
             <p className='text-text-layout/70 opacity-70'>Entregamos menos de 45 minutos</p>
           </div>
         </div>
