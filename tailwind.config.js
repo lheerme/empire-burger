@@ -16,6 +16,7 @@ export default {
         'title-black-38': '#1D0605',
         'yellow-layout': '#F59A1B',
         'red-layout': '#F43127',
+        'beige': '#FAE4D0',
       },
     },
   },
