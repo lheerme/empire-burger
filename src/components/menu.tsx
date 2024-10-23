@@ -38,18 +38,32 @@ export function Menu() {
         <div className="w-full max-w-[570px] space-y-3">
           <h2 className="text-[2rem] text-yellow-layout font-lilita-one uppercase">Cardápio imperial | Burger</h2>
           <ul className="space-y-8">
-            {data?.map((item) => (
-              <li 
-                id={item.plate}
-                className=""
-              >
-                <h3 className="w-full flex items-center justify-between text-xl text-beige font-lilita-one uppercase">
-                  <span className="flex flex-1 items-end after:content-[''] after:border-b-4 after:border-dotted after:border-red-90 after:mx-1 after:flex-1 after:mb-2">{item.plate}</span>
-                  <span>{formatNumber.format(item.price)}</span>
-                </h3>
-                <p className="text-white/90 w-full max-w-[470px]">{item.ingredients}</p>
-              </li>
-            ))}
+            {isFetching ? (
+              <>
+                {Array.from({ length: 4 }).map((_, index) => (
+                  <li key={index} className="space-y-3">
+                    <div className="w-full h-5 bg-title-black-60 animate-pulse rounded" />
+                    <div className="w-9/12 h-4 bg-title-black-60 animate-pulse rounded" />
+                    <div className="w-6/12 h-4 bg-title-black-60 animate-pulse rounded" />
+                  </li>
+                ))}
+              </>
+            ) : (
+              <>
+                {data?.map((item) => (
+                  <li 
+                    id={item.plate}
+                    className=""
+                  >
+                    <h3 className="w-full flex items-center justify-between text-xl text-beige font-lilita-one uppercase">
+                      <span className="flex flex-1 items-end after:content-[''] after:border-b-4 after:border-dotted after:border-red-90 after:mx-1 after:flex-1 after:mb-2">{item.plate}</span>
+                      <span>{formatNumber.format(item.price)}</span>
+                    </h3>
+                    <p className="text-white/90 w-full max-w-[470px]">{item.ingredients}</p>
+                  </li>
+                ))}
+              </>
+            )}
           </ul>
         </div>
       </div>
