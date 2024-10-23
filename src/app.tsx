@@ -4,6 +4,7 @@ import { HeroSection } from "./components/hero-section";
 import { Menu } from "./components/menu";
 import { OpeningHours } from "./components/opening-hours";
 import { SpecialOffers } from "./components/special-offers";
+import { CustomerService } from "./components/customer-service";
 
 const queryClient = new QueryClient()
 
@@ -16,6 +17,7 @@ export function App() {
         <SpecialOffers />
         <OpeningHours />
         <Menu />
+        <CustomerService />
       </main>
     </QueryClientProvider>
   )
