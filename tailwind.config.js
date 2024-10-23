@@ -17,6 +17,7 @@ export default {
         'yellow-layout': '#F59A1B',
         'red-layout': '#F43127',
         'beige': '#FAE4D0',
+        'brown': '#3B200B',
       },
     },
   },

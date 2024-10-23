@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Header } from "./components/header";
 import { HeroSection } from "./components/hero-section";
+import { Menu } from "./components/menu";
 import { OpeningHours } from "./components/opening-hours";
 import { SpecialOffers } from "./components/special-offers";
 
@@ -14,6 +15,7 @@ export function App() {
         <HeroSection />
         <SpecialOffers />
         <OpeningHours />
+        <Menu />
       </main>
     </QueryClientProvider>
   )
