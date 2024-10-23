@@ -1,6 +1,7 @@
 import burgerIcon from '../assets/burger-icon.svg'
 import headsetIcon from '../assets/headset-icon.svg'
 import scooterIcon from '../assets/scooter-icon.svg'
+import { Button } from './button'
 
 export function HeroSection() {
   return (
@@ -11,7 +12,7 @@ export function HeroSection() {
           <span className="text-title-black-38/90">KING</span> BURGER
         </h1>
         <p className="text-xl text-title-black-38/70">Para quem tem um <mark className="text-inherit font-black bg-yellow-layout px-1 py-0.5 rounded">Apetite de um REI!</mark></p>
-        <button className="px-5 py-2.5 text-white bg-red-layout w-fit rounded text-xl font-bold hover:opacity-90 hover:transition-opacity mt-5">Comprar Agora</button>
+        <Button variant='primary' size='default' >Comprar Agora</Button>
       </div>
 
       <div className="flex items-center justify-between gap-4 w-full max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-5 absolute -bottom-12 left-1/2 -translate-x-1/2">
