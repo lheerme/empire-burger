@@ -15,7 +15,8 @@ export function Menu() {
       const data = await response.json()
 
       return data
-    }
+    },
+    refetchOnWindowFocus: false,
   })
 
   const formatNumber = new Intl.NumberFormat('pt-BR', { 
