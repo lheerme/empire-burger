@@ -50,13 +50,13 @@ export function NossaRealeza() {
           centeredSlides={true}
           centeredSlidesBounds={true}
           spaceBetween={12}
-          slidesPerView={1.1}
+          slidesPerView={1.3}
           breakpoints={{
             768: {
-              slidesPerView: 2.4,
+              slidesPerView: 2.3,
             },
-            1160: {
-              slidesPerView: 3.4,
+            1080: {
+              slidesPerView: 3.3,
             },
           }}
           className='p-2 pb-14 sm:pb-9 h-full'
@@ -75,7 +75,7 @@ export function NossaRealeza() {
               key={index} 
               className={`w-[370px] h-auto flex flex-col justify-between gap-3 py-3 px-4 rounded-xl bg-white shadow-lg ${index !== 0 && 'opacity-70'} hover:opacity-100 transition-opacity`}
             >
-              <p className='text-title-black-60'>{testimonial.testimonial}</p>
+              <p title={testimonial.testimonial} className='text-title-black-60 line-clamp-2'>{testimonial.testimonial}</p>
               <div className='flex items-center gap-2'>
                 <img src={testimonial.image} alt={`foto do(a) ${testimonial.name}`} className='size-12 rounded-full object-cover' />
                 <div className='flex flex-col'>
