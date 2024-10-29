@@ -6,6 +6,7 @@ import { OpeningHours } from "./components/opening-hours";
 import { SpecialOffers } from "./components/special-offers";
 import { CustomerService } from "./components/customer-service";
 import { NossaRealeza } from "./components/nossa-realeza";
+import { PublicacoesDoInstagram } from "./components/publicacoes-do-instagram";
 
 const queryClient = new QueryClient()
 
@@ -21,6 +22,7 @@ export function App() {
         <CustomerService />
         <div className='w-full h-px bg-title-black-38/15 max-w-6xl mx-auto px-2 my-32' />
         <NossaRealeza />
+        <PublicacoesDoInstagram />
       </main>
     </QueryClientProvider>
   )

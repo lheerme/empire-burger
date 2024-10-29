@@ -19,6 +19,16 @@ export default {
         'beige': '#FAE4D0',
         'brown': '#3B200B',
       },
+      keyframes: {
+        'scroll-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }
+        }
+      },
+      animation: {
+        'scroll-left-slow': 'scroll-left 30s linear infinite',
+        'scroll-left-fast': 'scroll-left 10s linear infinite',
+      }
     },
   },
   plugins: [],
