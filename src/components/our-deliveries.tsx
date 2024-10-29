@@ -27,7 +27,7 @@ export function OurDeliveries() {
             </div>
           </li>
           <li className='bg-white shadow-lg hover:shadow-2xl hover:z-[1] hover:scale-[1.01] transition-transform rounded-md py-3.5 px-[22px] flex items-center gap-5 w-full'>
-            <img src={scooterIcon} alt="Ícone do Whatsapp" />
+            <img src={scooterIcon} alt="Ícone de uma moto" />
             <div className='w-[1px] h-11 bg-title-black-38/40' />
             <div>
               <h3 className='text-title-black-38/90 text-xl font-lilita-one uppercase'>Entrega</h3>
@@ -35,7 +35,7 @@ export function OurDeliveries() {
             </div>
           </li>
           <li className='bg-white shadow-lg hover:shadow-2xl hover:z-[1] hover:scale-[1.01] transition-transform rounded-md py-3.5 px-[22px] flex items-center gap-5 w-full'>
-            <img src={iceCreamIcon} alt="Ícone do Whatsapp" />
+            <img src={iceCreamIcon} alt="Ícone de um sorvete" />
             <div className='w-[1px] h-11 bg-title-black-38/40' />
             <div>
               <h3 className='text-title-black-38/90 text-xl font-lilita-one uppercase'>Sobremesa</h3>
@@ -43,7 +43,7 @@ export function OurDeliveries() {
             </div>
           </li>
           <li className='bg-white shadow-lg hover:shadow-2xl hover:z-[1] hover:scale-[1.01] transition-transform rounded-md py-3.5 px-[22px] flex items-center gap-5 w-full'>
-            <img src={ifoodIcon} alt="Ícone do Whatsapp" />
+            <img src={ifoodIcon} alt="Ícone do iFood" />
             <div className='w-[1px] h-11 bg-title-black-38/40' />
             <div>
               <h3 className='text-title-black-38/90 text-xl font-lilita-one uppercase'>iFood</h3>
