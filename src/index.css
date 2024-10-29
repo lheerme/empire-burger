@@ -9,3 +9,9 @@
 .swiper-pagination-bullet-active {
   background: #FFAD0D;
 }
+
+.border-radius-bullet {
+  border-radius: 160px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
