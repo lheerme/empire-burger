@@ -8,6 +8,7 @@ import { CustomerService } from "./components/customer-service";
 import { OurRoyalty } from "./components/our-royalty";
 import { InstagramPosts } from "./components/instagram-posts";
 import { OurDeliveries } from "./components/our-deliveries";
+import { RequestOrder } from "./components/request-order";
 
 
 const queryClient = new QueryClient()
@@ -26,6 +27,7 @@ export function App() {
         <OurRoyalty />
         <InstagramPosts />
         <OurDeliveries />
+        <RequestOrder />
       </main>
     </QueryClientProvider>
   )
