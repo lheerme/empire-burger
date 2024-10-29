@@ -4,7 +4,7 @@ import scooterIcon from '../assets/scooter-icon.svg'
 import iceCreamIcon from '../assets/ice-cream-icon.svg'
 import ifoodIcon from '../assets/ifood-icon-2.svg'
 
-export function NossasEntregas() {
+export function OurDeliveries() {
   return (
     <section className="max-w-6xl w-full mx-auto px-2 mb-16 mt-40 flex items-center gap-8">
       <div className='relative flex items-center justify-center w-[570px]'>

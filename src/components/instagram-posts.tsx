@@ -18,7 +18,7 @@ const publicacoes = [
   publiInsta8,  
 ]
 
-export function PublicacoesDoInstagram() {
+export function InstagramPosts() {
   return (
     <section className="w-full mx-auto mt-32">
       <h2 className="font-lilita-one text-3xl text-center text-title-black-38/90 uppercase">Publicações do Instagram</h2>

@@ -11,7 +11,7 @@ interface Testimonials {
   testimonial: string
 }
 
-export function NossaRealeza() {
+export function OurRoyalty() {
   const { data, isFetching } = useQuery<Testimonials[]>({
     queryKey: ['testimonials'],
     queryFn: async () => {
