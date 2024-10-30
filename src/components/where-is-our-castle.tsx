@@ -11,7 +11,7 @@ export function WhereIsOurCastle() {
       <h2 className="font-lilita-one text-3xl text-center text-title-black-38/90 uppercase">Onde ficar a nosso castelo</h2>
       <p className="text-title-black-38/70 text-center">Estaremos de portas abertas para a nossa realeza.</p>
 
-      <div className="w-full h-[207px]">
+      <div className="w-full h-[207px] mt-8">
         {isLoaded ? (
           <GoogleMap
             mapContainerStyle={{ width: '100%', height: '100%' }}
