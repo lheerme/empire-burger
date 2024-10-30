@@ -51,10 +51,10 @@ export function Menu() {
               </>
             ) : (
               <>
-                {data?.map((item) => (
+                {data?.map((item, index) => (
                   <li 
                     id={item.plate}
-                    className=""
+                    key={index}
                   >
                     <h3 className="w-full flex items-center justify-between text-xl text-beige font-lilita-one uppercase">
                       <span className="flex flex-1 items-end after:content-[''] after:border-b-4 after:border-dotted after:border-red-90 after:mx-1 after:flex-1 after:mb-2">{item.plate}</span>
