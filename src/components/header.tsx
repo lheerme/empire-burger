@@ -1,6 +1,6 @@
 import logo from '../assets/empire-burger-logo.svg'
 import iFoodLogo from '../assets/ifood-icon.svg'
-import instagramLogo from '../assets/intagram-icon.svg'
+import instagramLogo from '../assets/instagram-icon.svg'
 import whatsappLogo from '../assets/whatsapp-icon.svg'
 
 export function Header() {
