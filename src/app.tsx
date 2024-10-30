@@ -9,6 +9,7 @@ import { OurRoyalty } from "./components/our-royalty";
 import { InstagramPosts } from "./components/instagram-posts";
 import { OurDeliveries } from "./components/our-deliveries";
 import { RequestOrder } from "./components/request-order";
+import { WhereIsOurCastle } from "./components/where-is-our-castle";
 
 
 const queryClient = new QueryClient()
@@ -28,6 +29,7 @@ export function App() {
         <InstagramPosts />
         <OurDeliveries />
         <RequestOrder />
+        <WhereIsOurCastle />
       </main>
     </QueryClientProvider>
   )
