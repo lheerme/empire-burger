@@ -10,6 +10,7 @@ import { InstagramPosts } from "./components/instagram-posts";
 import { OurDeliveries } from "./components/our-deliveries";
 import { RequestOrder } from "./components/request-order";
 import { WhereIsOurCastle } from "./components/where-is-our-castle";
+import { Footer } from "./components/footer";
 
 
 const queryClient = new QueryClient()
@@ -31,6 +32,7 @@ export function App() {
         <RequestOrder />
         <WhereIsOurCastle />
       </main>
+      <Footer />
     </QueryClientProvider>
   )
 }
