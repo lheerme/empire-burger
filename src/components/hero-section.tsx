@@ -5,7 +5,10 @@ import { Button } from './button'
 
 export function HeroSection() {
   return (
-    <section className="bg-[url('/src/assets/banner-hero.png')] bg-no-repeat bg-cover bg-center h-[545px] w-full mb-32 flex items-center relative">
+    <section 
+      id='home'
+      className="bg-[url('/src/assets/banner-hero.png')] bg-no-repeat bg-cover bg-center h-[545px] w-full mb-32 flex items-center relative"
+    >
       <div className="max-w-6xl w-full mx-auto flex flex-col px-2">
         <p className="text-xl font-bold text-title-black-38/90">Uma nova experiência!</p>
         <h1 className="font-lilita-one text-7xl text-yellow-layout">

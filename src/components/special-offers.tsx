@@ -4,7 +4,10 @@ import iceCream from '../assets/ice-cream.png'
 
 export function SpecialOffers() {
   return (
-    <section className="max-w-6xl w-full mx-auto px-2">
+    <section 
+      id='offers'
+      className="max-w-6xl w-full mx-auto px-2"
+    >
       <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
       <p className="text-title-black-38/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
 

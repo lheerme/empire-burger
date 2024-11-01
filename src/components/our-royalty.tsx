@@ -31,7 +31,10 @@ export function OurRoyalty() {
   };
 
   return (
-    <section className="max-w-6xl w-full mx-auto px-2">
+    <section 
+      id='our-royalty'
+      className="max-w-6xl w-full mx-auto px-2"
+    >
       <div className='mb-4'>
         <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Nossa realeza</h2>
         <p className="text-title-black-38/70">A satisfação de nossos clientes em primeiro lugar!</p>

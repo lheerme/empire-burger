@@ -3,7 +3,10 @@ import { Button } from './button'
 
 export function RequestOrder() {
   return (
-    <section className="max-w-6xl w-full mx-auto mt-32 mb-16 px-2">
+    <section 
+      id='contact'
+      className="max-w-6xl w-full mx-auto mt-32 mb-16 px-2"
+    >
       <div className='bg-red-layout w-full rounded-md flex items-center gap-4 py-3.5 px-6'>
         <img 
           src={phoneIcon} 

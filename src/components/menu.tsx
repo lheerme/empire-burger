@@ -26,7 +26,10 @@ export function Menu() {
   })
 
   return (
-    <section className="w-full h-[575px] mx-auto grid grid-cols-2 grid-rows-1">
+    <section
+      id="menu"
+      className="w-full h-[575px] mx-auto grid grid-cols-2 grid-rows-1"
+    >
       <div className="size-full bg-[url('/src/assets/menu-background.png')] bg-center bg-cover bg-no-repeat flex items-center justify-end">
         <div className="w-full max-w-[460px] mr-7 min-[1777px]:mr-20 backdrop-blur xl:backdrop-blur-none p-2 box-content rounded-md">
           <h3 className="text-brown font-lilita-one text-[2.563rem] uppercase">Escolha o seu combo imperial, <mark className="text-inherit bg-yellow-layout px-1 py-0.5 rounded">peça agora!</mark></h3>
