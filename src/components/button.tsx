@@ -10,7 +10,7 @@ const buttonVariants = tv({
       secondary: 'text-red-layout font-black uppercase bg-beige'
     },
     size: {
-      default: 'text-xl',
+      default: 'md:text-xl',
       sm: 'text-base'
     }
   },
