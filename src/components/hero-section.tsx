@@ -9,7 +9,7 @@ export function HeroSection() {
       id='home'
       className="bg-[url('/src/assets/banner-mobile.png')] md:bg-[url('/src/assets/banner-hero.png')] bg-no-repeat bg-cover bg-center h-[855px] md:h-[545px] w-full min-[830px]:mb-32 mb-[280px] flex md:items-center py-20 md:py-0 relative"
     >
-      <div className="max-w-6xl w-full mx-auto flex flex-col px-2">
+      <div className="max-w-6xl w-full mx-auto flex flex-col px-6">
         <p className="text-lg md:text-xl font-bold text-title-black-38/90">Uma nova experiência!</p>
         <h1 className="font-lilita-one text-5xl md:text-7xl text-yellow-layout">
           <span className="text-title-black-38/90">KING</span> BURGER
