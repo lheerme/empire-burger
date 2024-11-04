@@ -19,7 +19,7 @@ export function Hamburger({ isChecked, setIsChecked }: HamburgerProps) {
   return (
     <label 
       htmlFor="menu_checkbox"
-      className="size-10 cursor-pointer p-2.5 bg-title-black-38/15 rounded-md z-[3]"
+      className="min-[1040px]:hidden size-10 cursor-pointer p-2.5 bg-title-black-38/15 rounded-md z-[3]"
     >
       <input 
         type="checkbox" 

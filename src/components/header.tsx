@@ -39,7 +39,7 @@ export function Header() {
         </a>
 
         <nav className={twMerge(
-          'min-[990px]:block hidden', 
+          'min-[1040px]:block hidden', 
           isHamburgerChecked && 'flex flex-col items-center justify-center gap-10 absolute w-full h-dvh top-0 left-0 bg-beige'
         )}>
           <ul className={twMerge(
@@ -93,7 +93,7 @@ export function Header() {
             </li>
           </ul>
 
-          <div className='min-[990px]:hidden'>
+          <div className='min-[1040px]:hidden'>
             <div className='flex flex-col items-center gap-3'>
               <div className='flex items-center gap-3'>
                 <a href="#" className='size-10 flex items-center justify-center hover:opacity-80 hover:transition-opacity shrink-0 bg-red-layout rounded-md'>
@@ -110,7 +110,7 @@ export function Header() {
           </div>
         </nav>
 
-        <div className='min-[990px]:flex hidden items-center gap-3'>
+        <div className='min-[1040px]:flex hidden items-center gap-3'>
           <a href="#" className='block w-fit hover:opacity-80 hover:transition-opacity shrink-0'>
             <img src={iFoodLogo} alt="iFood logo" />
           </a>
