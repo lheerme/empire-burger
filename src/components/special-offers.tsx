@@ -6,7 +6,7 @@ export function SpecialOffers() {
   return (
     <section 
       id='offers'
-      className="max-w-6xl w-full mx-auto px-2"
+      className="max-w-6xl w-full mx-auto px-6"
     >
       <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
       <p className="text-title-black-38/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
@@ -21,11 +21,11 @@ export function SpecialOffers() {
 
           <div className='size-full relative z-[1] flex justify-between py-4 px-5'>
             <div>
-              <h3 className='font-lilita-one text-2xl text-white uppercase'>Burger imperial+batata</h3>
-              <p className='text-white/70'>250kg</p>
+              <h3 className='font-lilita-one text-xl md:text-2xl text-white uppercase'>Burger imperial+batata</h3>
+              <p className='text-white/70 text-lg'>250kg</p>
             </div>
 
-            <p className='text-white/70 text-2xl self-end w-24'>Apenas <span className='text-white font-lilita-one text-[2.625rem]'>HOJE</span></p>
+            <p className='text-white/70 text-xs md:text-2xl self-end w-12 md:w-24'>Apenas <span className='text-white font-lilita-one text-xl md:text-[2.625rem]'>HOJE</span></p>
           </div>
         </div>
 
@@ -38,8 +38,8 @@ export function SpecialOffers() {
 
           <div className='size-full relative z-[1] flex justify-between py-4 px-5'>
             <div>
-              <h3 className='font-lilita-one text-2xl text-title-black-38/90 uppercase leading-none'>batata</h3>
-              <p className='text-title-black-38/70 leading-none'>150kg</p>
+              <h3 className='font-lilita-one text-xl md:text-2xl text-title-black-38/90 uppercase leading-none'>batata</h3>
+              <p className='text-title-black-38/70 leading-none text-lg'>150kg</p>
             </div>
           </div>
         </div>
@@ -53,8 +53,8 @@ export function SpecialOffers() {
 
           <div className='size-full relative z-[1] flex justify-between py-4 px-5'>
             <div>
-              <h3 className='font-lilita-one text-2xl text-title-black-38/90 uppercase leading-none'>sorvete</h3>
-              <p className='text-title-black-38/70 leading-none'>50kg</p>
+              <h3 className='font-lilita-one text-xl md:text-2xl text-title-black-38/90 uppercase leading-none'>sorvete</h3>
+              <p className='text-title-black-38/70 leading-none text-lg'>50kg</p>
             </div>
           </div>
         </div>
