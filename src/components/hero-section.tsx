@@ -19,7 +19,7 @@ export function HeroSection() {
       </div>
 
       <div className='absolute min-[830px]:-bottom-12 -bottom-56 left-1/2 -translate-x-1/2 w-full px-2 min-[370px]:px-8'>
-        <div className="flex flex-col min-[830px]:flex-row min-[830px]:items-center justify-between gap-4 w-full min-[370px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 min-[830px]:px-5 px-9 mx-auto">
+        <div className="flex flex-col min-[830px]:flex-row items-center sm:items-start min-[830px]:items-center justify-between gap-4 w-full min-[460px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-4 min-[460px]:px-9 min-[830px]:px-5 mx-auto">
           <div className="flex items-center gap-4">
             <img src={burgerIcon} alt="burger icon" />
             <div className='max-w-[170px] w-full'>
