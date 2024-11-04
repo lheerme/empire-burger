@@ -11,8 +11,8 @@ export function SpecialOffers() {
       <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
       <p className="text-title-black-38/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
 
-      <div className='mt-4 grid grid-cols-3 grid-rows-2 gap-4 lg:gap-[30px]'>
-        <div className="w-full max-w-[770px] h-[430px] relative group overflow-hidden rounded-2xl cursor-default row-span-2 col-span-2">
+      <div className='mt-4 grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-4 lg:gap-[30px]'>
+        <div className="w-full max-w-[770px] h-[211px] md:h-[430px] relative group overflow-hidden rounded-2xl cursor-default md:row-span-2 md:col-span-2">
           <img
             src={meatBurger}
             alt="Hambúrguer Imperial com batata frita de R$ 49,50 por R$ 35,99"
@@ -29,7 +29,7 @@ export function SpecialOffers() {
           </div>
         </div>
 
-        <div className="w-full max-w-[370px] h-[200px] relative group overflow-hidden rounded-2xl cursor-default">
+        <div className="w-full md:max-w-[370px] h-[211px] md:h-[200px] relative group overflow-hidden rounded-2xl cursor-default">
           <img
             src={frenchFries}
             alt="Batata frita de R$ 15,50 por R$ 11,99"
@@ -44,7 +44,7 @@ export function SpecialOffers() {
           </div>
         </div>
 
-        <div className="w-full max-w-[370px] h-[200px] relative group overflow-hidden rounded-2xl cursor-default">
+        <div className="w-full md:max-w-[370px] h-[211px] md:h-[200px] relative group overflow-hidden rounded-2xl cursor-default">
           <img
             src={iceCream}
             alt="Sorvete de R$ 3,50 por R$ 2,50"
