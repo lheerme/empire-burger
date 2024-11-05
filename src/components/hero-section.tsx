@@ -19,7 +19,7 @@ export function HeroSection() {
       </div>
 
       <div className='absolute min-[830px]:-bottom-12 -bottom-56 left-1/2 -translate-x-1/2 w-full px-2 min-[370px]:px-8'>
-        <div className="flex flex-col min-[830px]:flex-row items-center sm:items-start min-[830px]:items-center justify-between gap-4 w-full min-[460px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-4 min-[460px]:px-9 min-[830px]:px-5 mx-auto">
+        <div className="flex flex-col min-[830px]:flex-row items-center sm:items-start min-[830px]:items-center justify-between gap-4 w-full min-[460px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-8 min-[830px]:px-5 mx-auto">
           <div className="flex items-center gap-4">
             <img src={burgerIcon} alt="burger icon" />
             <div className='max-w-[170px] w-full'>
@@ -27,7 +27,7 @@ export function HeroSection() {
               <p className='text-title-black-38/70 opacity-70'>Nossas receitas são feitas com todo cuidado</p>
             </div>
           </div>
-          <div className='w-[1px] self-stretch bg-[#492E1526]' />
+          <div className='w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]' />
           <div className="flex items-center gap-4">
             <img src={headsetIcon} alt="burger icon" />
             <div className='max-w-[170px] w-full'>
@@ -35,7 +35,7 @@ export function HeroSection() {
               <p className='text-title-black-38/70 opacity-70'>Totalmente personalizado</p>
             </div>
           </div>
-          <div className='w-[1px] self-stretch bg-[#492E1526]' />
+          <div className='w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]' />
           <div className="flex items-center gap-4">
             <img src={scooterIcon} alt="burger icon" />
             <div className='max-w-[170px] w-full'>
