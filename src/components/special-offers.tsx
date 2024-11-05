@@ -8,7 +8,7 @@ export function SpecialOffers() {
       id='offers'
       className="max-w-6xl w-full mx-auto px-6"
     >
-      <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
+      <h2 className="font-lilita-one text-2xl md:text-3xl text-title-black-38/90 uppercase">Ofertas especiais</h2>
       <p className="text-title-black-38/70">Aproveite todas as nossas ofertas, fiquem de olhos abertos, porque sempre estamos mudando o nosso cardápio.</p>
 
       <div className='mt-4 grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-4 lg:gap-[30px]'>

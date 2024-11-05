@@ -36,7 +36,7 @@ export function OurRoyalty() {
       className="max-w-6xl w-full mx-auto px-6"
     >
       <div className='mb-4'>
-        <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Nossa realeza</h2>
+        <h2 className="font-lilita-one text-2xl md:text-3xl text-title-black-38/90 uppercase">Nossa realeza</h2>
         <p className="text-title-black-38/70">A satisfação de nossos clientes em primeiro lugar!</p>
       </div>
 
