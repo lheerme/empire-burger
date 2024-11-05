@@ -20,9 +20,9 @@ const publicacoes = [
 
 export function InstagramPosts() {
   return (
-    <section className="w-full mx-auto mt-32">
-      <h2 className="font-lilita-one text-3xl text-center text-title-black-38/90 uppercase">Publicações do Instagram</h2>
-      <p className="text-title-black-38/70 text-center">Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</p>
+    <section className="w-full mx-auto mt-12 md:mt-32">
+      <h2 className="font-lilita-one text-2xl md:text-3xl text-center px-6 text-title-black-38/90 uppercase">Publicações do Instagram</h2>
+      <p className="text-title-black-38/70 text-center px-6">Todos os nossos clientes são tratados como rei e rainha, com a nossa colunaria artesanal.</p>
 
       <div className='overflow-hidden mt-4 relative'>
         <div className="absolute bottom-0 top-0 right-0 w-1/5 bg-gradient-to-l from-[#21201B] to-white/0 pointer-events-none z-[1]" />
@@ -33,7 +33,7 @@ export function InstagramPosts() {
               src={publi}
               key={index}
               alt="Foto de uma publicação no Instagram sobre o Empire Burger"
-              className='w-[270px] object-cover'
+              className='w-[123px] md:w-[270px] object-cover'
             />
           ))}
         </div>
@@ -41,7 +41,7 @@ export function InstagramPosts() {
       <div className='overflow-hidden flex items-center bg-yellow-layout'>
         <div className='flex items-center w-max animate-scroll-left-fast'>
           {Array.from({ length: 16 }).map((_, index) => (
-            <p key={index} className='w-max text-[1.75rem] text-title-black-38/90 font-lilita-one uppercase'>#empireburger • </p>
+            <p key={index} className='w-max text-sm md:text-[1.75rem] text-title-black-38/90 font-lilita-one uppercase'>#empireburger • </p>
           ))}
         </div>
       </div>
