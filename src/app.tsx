@@ -25,7 +25,7 @@ export function App() {
         <OpeningHours />
         <Menu />
         <CustomerService />
-        <div className='w-full h-px bg-title-black-38/15 max-w-6xl mx-auto px-2 my-32' />
+        <div className='w-[calc(100%-48px)] md:w-full h-px bg-title-black-38/15 max-w-6xl mx-auto px-2 my-16 md:my-32' />
         <OurRoyalty />
         <InstagramPosts />
         <OurDeliveries />
