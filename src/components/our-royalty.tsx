@@ -26,14 +26,14 @@ export function OurRoyalty() {
   const pagination = {
     clickable: true,
     renderBullet: (_: unknown, className: string) => {
-      return '<span class="' + className + ' w-5 sm:w-[47px] h-1 bg-white rounded-none opacity-100"></span>';
+      return '<span class="' + className + ' hidden md:inline-block w-5 sm:w-[47px] h-1 bg-white rounded-none opacity-100"></span>';
     },
   };
 
   return (
     <section 
       id='our-royalty'
-      className="max-w-6xl w-full mx-auto px-2"
+      className="max-w-6xl w-full mx-auto px-6"
     >
       <div className='mb-4'>
         <h2 className="font-lilita-one text-3xl text-title-black-38/90 uppercase">Nossa realeza</h2>
@@ -42,9 +42,9 @@ export function OurRoyalty() {
 
       {isFetching ? (
         <div className='flex items-center gap-3'>
-          <div className='w-[370px] h-56 bg-title-black-60/30 animate-pulse rounded' />
-          <div className='w-[370px] h-56 bg-title-black-60/30 animate-pulse rounded' />
-          <div className='w-[370px] h-56 bg-title-black-60/30 animate-pulse rounded' />
+          <div className='block w-full min-[1080px]:w-[370px] h-52 md:h-56 bg-title-black-60/30 animate-pulse rounded' />
+          <div className='hidden md:block w-full min-[1080px]:w-[370px] h-52 md:h-56 bg-title-black-60/30 animate-pulse rounded' />
+          <div className='hidden min-[1080px]:block w-[370px] h-52 md:h-56 bg-title-black-60/30 animate-pulse rounded' />
         </div>
       ) : (
         <Swiper
@@ -78,11 +78,11 @@ export function OurRoyalty() {
               key={index} 
               className={`w-[370px] h-auto flex flex-col justify-between gap-3 py-3 px-4 rounded-xl bg-white shadow-lg ${index !== 0 && 'opacity-70'} hover:opacity-100 transition-opacity`}
             >
-              <p title={testimonial.testimonial} className='text-title-black-60 line-clamp-2'>{testimonial.testimonial}</p>
+              <p title={testimonial.testimonial} className='text-title-black-60 line-clamp-4'>{testimonial.testimonial}</p>
               <div className='flex items-center gap-2'>
                 <img src={testimonial.image} alt={`foto do(a) ${testimonial.name}`} className='size-12 rounded-full object-cover' />
                 <div className='flex flex-col'>
-                  <h4 className='text-title-black-38/90 text-lg uppercase font-lilita-one'>{testimonial.name}</h4>
+                  <h4 className='text-title-black-38/90 min-[380px]:text-lg uppercase font-lilita-one'>{testimonial.name}</h4>
                   <p className='text-title-black-38/70 text-xs'>{testimonial.name}</p>
                 </div>
               </div>
