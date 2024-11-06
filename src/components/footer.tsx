@@ -5,31 +5,34 @@ import instagramLogo from '../assets/instagram-icon-2.svg'
 export function Footer() {
   return (
     <footer className="w-full border-b-[1px] border-[#3C210C26]">
-      <div className="max-w-6xl w-full mx-auto py-7 flex items-center justify-between">
+      <div className="max-w-6xl w-full mx-auto py-7 px-6 flex flex-col min-[880px]:flex-row items-center justify-between gap-3">
         <a href="#" className='block w-fit'>
           <img src={logo} alt="Empire Burger logo" />
         </a>
+        <div className='w-full min-[880px]:hidden block h-px bg-title-black-38/15' />
+        
 
-        <nav>
-          <ul className='flex items-center gap-4'>
-            <li className='text-title-black-60 text-lg hover:text-title-black-87 hover:transition-all'>
+        <nav className='min-[880px]:order-none order-last'>
+          <ul className='flex flex-col min-[880px]:flex-row items-center gap-4'>
+            <li className='text-brown text-lg hover:text-brown/80 hover:transition-all'>
               <a href="#home">Home</a>
             </li>
-            <li className='text-title-black-60 text-lg hover:text-title-black-87 hover:transition-all'>
+            <li className='text-brown text-lg hover:text-brown/80 hover:transition-all'>
               <a href="#offers">Promoção</a>
             </li>
-            <li className='text-title-black-60 text-lg hover:text-title-black-87 hover:transition-all'>
+            <li className='text-brown text-lg hover:text-brown/80 hover:transition-all'>
               <a href="#menu">Cardápio</a>
             </li>
-            <li className='text-title-black-60 text-lg hover:text-title-black-87 hover:transition-all'>
+            <li className='text-brown text-lg hover:text-brown/80 hover:transition-all'>
               <a href="#our-royalty">Cometários</a>
             </li>
-            <li className='text-title-black-60 text-lg hover:text-title-black-87 hover:transition-all'>
+            <li className='text-brown text-lg hover:text-brown/80 hover:transition-all'>
               <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>
-
+        <div className='w-full min-[880px]:hidden block h-px bg-title-black-38/15 order-last' />
+        
         <div className='flex items-center gap-3'>
           <a href="#" className='block w-fit hover:opacity-80 hover:transition-opacity'>
             <img src={iFoodLogo} alt="iFood logo" className='' />
@@ -38,6 +41,8 @@ export function Footer() {
             <img src={instagramLogo} alt="Instagram logo" />
           </a>
         </div>
+        <div className='w-full min-[880px]:hidden block h-px bg-title-black-38/15' />
+        
       </div>
       <div className='py-3 text-center'>
         <p className='text-sm text-[#020E1F]/30'>
