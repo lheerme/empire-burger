@@ -6,13 +6,12 @@ import ifoodIcon from '../assets/ifood-icon-2.svg'
 
 export function OurDeliveries() {
   return (
-    <section className="max-w-6xl w-full mx-auto px-6 mb-16 mt-40 flex flex-col min-[980px]:flex-row items-center gap-36 min-[980px]:gap-8">
-      <div className='relative flex items-center justify-center w-full max-w-[570px]'>
-        <div className="w-full max-w-[380px] min-[980px]:max-w-none h-[205px] min-[980px]:h-[308px] bg-beige border-radius-bullet" />
+    <section className="max-w-6xl w-full mx-auto px-6 mb-16 mt-16 flex flex-col min-[980px]:flex-row items-center gap-8">
+      <div className='relative flex items-center justify-center w-full'>
         <img 
           src={phone} 
           alt="Celular com um hamburger saltando da tela"
-          className='w-[300px] min-[980px]:w-auto absolute top-1/2 left-[40%] -translate-x-1/2 -translate-y-1/2'
+          className='w-full max-w-[570px]'
         />
       </div>
       <div className='w-full space-y-4'>
