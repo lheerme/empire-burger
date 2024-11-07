@@ -32,10 +32,10 @@ export function Header() {
   }
 
   return (
-    <header className={`fixed w-full border-b-[1px] border-[#3C210C26] z-[2] ${isScrolled ? 'bg-white' : 'backdrop-blur-md'} transition-colors`}>
+    <header className={`fixed w-full border-b-[1px] border-[#3C210C26] z-[2] ${isScrolled ? 'bg-beige' : 'backdrop-blur-md'} transition-colors`}>
       <div className="max-w-6xl w-full mx-auto py-3.5 px-6 flex items-center justify-between gap-2">
         <a href="#" className='block w-fit shrink-0'>
-          <img src={logo} alt="Empire Burger logo" className='min-[360px]:w-auto w-48' />
+          <img src={logo} alt="Empire Burger logo" className='min-[390px]:w-auto w-48' />
         </a>
 
         <nav className={twMerge(
