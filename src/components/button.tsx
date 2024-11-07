@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ComponentProps } from "react";
+import { ButtonHTMLAttributes, forwardRef } from "react";
 import { tv, VariantProps } from 'tailwind-variants'
 
 const buttonVariants = tv({
@@ -20,12 +20,12 @@ const buttonVariants = tv({
   }
 })
 
-interface ButtonProps extends ComponentProps<'button'>, VariantProps<typeof buttonVariants> {}
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {}
 
-export function Button(props: ButtonProps) {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
   const { className, ...rest } = props
 
   return (
-    <button {...rest} className={clsx(buttonVariants({ variant: props.variant, size: props.size }), className)} />
+    <button ref={ref} {...rest} className={clsx(buttonVariants({ variant: props.variant, size: props.size }), className)} />
   )
-}
+})
