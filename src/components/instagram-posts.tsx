@@ -41,7 +41,7 @@ export function InstagramPosts() {
       <div className='overflow-hidden flex items-center bg-yellow-layout'>
         <div className='flex items-center w-max animate-scroll-left-fast'>
           {Array.from({ length: 16 }).map((_, index) => (
-            <p key={index} className='w-max text-sm md:text-[1.75rem] text-title-black-38/90 font-lilita-one uppercase'>#empireburger • </p>
+            <p key={index} className='w-max text-[0.875rem] md:text-[1.75rem] text-title-black-38/90 font-lilita-one uppercase'>#empireburger • </p>
           ))}
         </div>
       </div>
