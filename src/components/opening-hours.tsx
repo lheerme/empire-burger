@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import stopwatchIcon from '../assets/stopwatch-icon.svg'
+import { twMerge } from 'tailwind-merge'
 
 const date = new Date()
 const day = date.getDay()
@@ -26,7 +27,11 @@ export function OpeningHours() {
 
   return (
     <section className="max-w-6xl w-full mx-auto px-2 my-16 flex flex-col min-[840px]:flex-row items-center gap-8 min-[840px]:gap-0">
-      <div className={`${isEmpireBurgerOpen ? 'bg-green-600' : 'bg-red-layout'} rounded-2xl flex items-center gap-4 py-5 px-6 w-full max-w-xl relative overflow-hidden`}>
+      <div className={twMerge(
+          'rounded-2xl flex items-center gap-4 py-5 px-6 w-full max-w-xl relative overflow-hidden',
+          isEmpireBurgerOpen ? 'bg-green-600' : 'bg-red-layout'
+        )}
+      >
         <span 
           className='bg-beige absolute font-lilita-one text-title-black-38/70 text-xl text-center w-32 uppercase top-5 -left-7 -rotate-45'
           >

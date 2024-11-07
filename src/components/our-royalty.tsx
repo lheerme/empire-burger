@@ -3,6 +3,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useQuery } from '@tanstack/react-query';
+import { twMerge } from 'tailwind-merge';
 
 interface Testimonials {
   name: string
@@ -76,7 +77,10 @@ export function OurRoyalty() {
           {data?.map((testimonial, index) => (
             <SwiperSlide 
               key={index} 
-              className={`w-[370px] h-auto flex flex-col justify-between gap-3 py-3 px-4 rounded-xl bg-white shadow-lg ${index !== 0 && 'opacity-70'} hover:opacity-100 transition-opacity`}
+              className={twMerge(
+                'w-[370px] h-auto flex flex-col justify-between gap-3 py-3 px-4 rounded-xl bg-white shadow-lg hover:opacity-100 transition-opacity',
+                index !== 0 && 'opacity-70'
+              )}
             >
               <p title={testimonial.testimonial} className='text-title-black-60 line-clamp-4'>{testimonial.testimonial}</p>
               <div className='flex items-center gap-2'>
