@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  <img src=".github/empire-burger-logo.png" width="300px" />
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src=".github/preview.png" width="100%" />
+</p>
 
-Currently, two official plugins are available:
+## 💻 Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esse projeto é uma landing page de uma hamburgueria fictícia chamada **Empire Burger**, nela há seções sobre as ofertas especiais, horário de funcionamento, cardápio contendo os ingredientes e preços, cards com os feedbacks dos clientes e a localização do estabelecimento.
 
-## Expanding the ESLint configuration
+Para facilitar a codificação do projeto foi usado um protótipo do figma como base, o autor do layout é o design [**Tiago Alves**](https://www.behance.net/tiagofenixe9d9), [clique aqui](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1) para abrir o protótipo no figma.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tecnologias
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- Typescript
+- TailwindCSS
+- Framer Motion
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📝 Critérios de aceite
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [x] Criar as seguintes seções: Menu, Banner hero, Ofertas especiais, Onde fica o nosso castelo, Footer.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [x] Ao clicar em um item do menu, o usuário deverá ser levado para a seção correspondente.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [x] Na seção Ofertas especiais os elementos devem ser organizados com o uso da propriedade display:grid do css.
+
+- [x] As informações do card da oferta(nome do prato e gramagem) devem estar no html, a única imagem deve ser a foto do prato com o preço.
+
+- [x] Na seção Onde fica o nosso castelo você deverá incorporar uma localização do google maps.
+
+### Nível Médio
+
+- [x] Todos os requisitos do nivel fácil.
+
+- [x] Criar as seguintes seções: Cardápio, Atendimento, Nossas entregas.
+
+- [x] Na seção Cardápio os preços devem ser formatados com o método Intl.NumberFormat.
+
+- [x] O card Horário de funcionamento deverá ter os estados aberto e fechado, o estado será alterado conforme o horário do navegador do usuário.
+
+### Nível Difícil
+
+- [x] Todos os requisitos do nivel fácil e médio
+
+- [x] Criar as seguintes seções: Nossa realeza, Publicações do instagram.
+
+- [x] Buscar a lista de itens do cardápio via api.
+
+- [x] Buscar a lista de depoimentos via api.
+
+- [x] Na seção Nossa realeza os depoimentos deverão estar em um carrousel funcional.
+
+- [x] O texto de cada depoimento deverá estar limitado em quatro linhas, você pode usar a propriedade clamp do css.
