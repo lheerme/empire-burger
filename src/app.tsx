@@ -19,7 +19,7 @@ export function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Header />
-      <main>
+      <main className="overflow-hidden">
         <HeroSection />
         <SpecialOffers />
         <OpeningHours />

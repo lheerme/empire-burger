@@ -2,6 +2,9 @@ import burgerIcon from '../assets/burger-icon.svg'
 import headsetIcon from '../assets/headset-icon.svg'
 import scooterIcon from '../assets/scooter-icon.svg'
 import { Button } from './button'
+import { motion } from 'framer-motion'
+
+const MotionButton = motion(Button)
 
 export function HeroSection() {
   return (
@@ -10,16 +13,48 @@ export function HeroSection() {
       className="bg-[url('/src/assets/banner-mobile.png')] md:bg-[url('/src/assets/banner-hero.png')] bg-no-repeat bg-cover bg-center h-[855px] md:h-[545px] w-full min-[830px]:mb-32 mb-[280px] flex md:items-center py-20 md:py-0 relative"
     >
       <div className="max-w-6xl w-full mx-auto flex flex-col px-6">
-        <p className="text-lg md:text-xl font-bold text-title-black-38/90">Uma nova experiência!</p>
-        <h1 className="font-lilita-one text-5xl md:text-7xl text-yellow-layout">
+        <motion.p
+          initial={{ opacity: 0, x: '-100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="text-lg md:text-xl font-bold text-title-black-38/90"
+        >
+          Uma nova experiência!
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, x: '-100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="font-lilita-one text-5xl md:text-7xl text-yellow-layout"
+        >
           <span className="text-title-black-38/90">KING</span> BURGER
-        </h1>
-        <p className="md:text-xl text-title-black-38/70">Para quem tem um <mark className="text-inherit font-black bg-yellow-layout px-1 py-0.5 rounded">Apetite de um REI!</mark></p>
-        <Button variant='primary' size='default' >Comprar Agora</Button>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, x: '-100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="md:text-xl text-title-black-38/70"
+        >
+          Para quem tem um <mark className="text-inherit font-black bg-yellow-layout px-1 py-0.5 rounded">Apetite de um REI!</mark>
+        </motion.p>
+        <MotionButton
+          initial={{ opacity: 0, x: '-100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          variant='primary' 
+          size='default'
+        >
+          Comprar Agora
+        </MotionButton>
       </div>
 
       <div className='absolute min-[830px]:-bottom-12 -bottom-56 left-1/2 -translate-x-1/2 w-full px-2 min-[370px]:px-8'>
-        <div className="flex flex-col min-[830px]:flex-row items-center sm:items-start min-[830px]:items-center justify-between gap-4 w-full min-[460px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-8 min-[830px]:px-5 mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: '100%' }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="flex flex-col min-[830px]:flex-row items-center sm:items-start min-[830px]:items-center justify-between gap-4 w-full min-[460px]:min-w-[355px] min-[830px]:max-w-[970px] rounded-xl shadow-2xl bg-white py-6 px-8 min-[830px]:px-5 mx-auto"
+        >
           <div className="flex items-center gap-4">
             <img src={burgerIcon} alt="burger icon" />
             <div className='max-w-[170px] w-full'>
@@ -43,7 +78,7 @@ export function HeroSection() {
               <p className='text-title-black-38/70 opacity-70'>Entregamos menos de 45 minutos</p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
