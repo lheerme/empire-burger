@@ -8,8 +8,8 @@ const MotionButton = motion(Button)
 
 export function HeroSection() {
   return (
-    <section 
-      id='home'
+    <section
+      id="home"
       className="bg-[url('/src/assets/banner-mobile.png')] md:bg-[url('/src/assets/banner-hero.png')] bg-no-repeat bg-cover bg-center h-[855px] md:h-[545px] w-full min-[830px]:mb-32 mb-[280px] flex md:items-center py-20 md:py-0 relative"
     >
       <div className="max-w-6xl w-full mx-auto flex flex-col px-6">
@@ -35,20 +35,23 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="md:text-xl text-title-black-38/70"
         >
-          Para quem tem um <mark className="text-inherit font-black bg-yellow-layout px-1 py-0.5 rounded">Apetite de um REI!</mark>
+          Para quem tem um{' '}
+          <mark className="text-inherit font-black bg-yellow-layout px-1 py-0.5 rounded">
+            Apetite de um REI!
+          </mark>
         </motion.p>
         <MotionButton
           initial={{ opacity: 0, x: '-100%' }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          variant='primary' 
-          size='default'
+          variant="primary"
+          size="default"
         >
           Comprar Agora
         </MotionButton>
       </div>
 
-      <div className='absolute min-[830px]:-bottom-12 -bottom-56 left-1/2 -translate-x-1/2 w-full px-2 min-[370px]:px-8'>
+      <div className="absolute min-[830px]:-bottom-12 -bottom-56 left-1/2 -translate-x-1/2 w-full px-2 min-[370px]:px-8">
         <motion.div
           initial={{ opacity: 0, y: '100%' }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,25 +60,37 @@ export function HeroSection() {
         >
           <div className="flex items-center gap-4">
             <img src={burgerIcon} alt="burger icon" />
-            <div className='max-w-[170px] w-full'>
-              <h3 className='text-title-black-38/90 font-lilita-one text-xl uppercase'>Artesanal</h3>
-              <p className='text-title-black-38/70 opacity-70'>Nossas receitas são feitas com todo cuidado</p>
+            <div className="max-w-[170px] w-full">
+              <h3 className="text-title-black-38/90 font-lilita-one text-xl uppercase">
+                Artesanal
+              </h3>
+              <p className="text-title-black-38/70 opacity-70">
+                Nossas receitas são feitas com todo cuidado
+              </p>
             </div>
           </div>
-          <div className='w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]' />
+          <div className="w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]" />
           <div className="flex items-center gap-4">
             <img src={headsetIcon} alt="burger icon" />
-            <div className='max-w-[170px] w-full'>
-              <h3 className='text-title-black-38/90 font-lilita-one text-xl uppercase'>Atendimento</h3>
-              <p className='text-title-black-38/70 opacity-70'>Totalmente personalizado</p>
+            <div className="max-w-[170px] w-full">
+              <h3 className="text-title-black-38/90 font-lilita-one text-xl uppercase">
+                Atendimento
+              </h3>
+              <p className="text-title-black-38/70 opacity-70">
+                Totalmente personalizado
+              </p>
             </div>
           </div>
-          <div className='w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]' />
+          <div className="w-full min-[830px]:w-px h-px min-[830px]:h-auto min-[830px]:self-stretch bg-[#492E1526]" />
           <div className="flex items-center gap-4">
             <img src={scooterIcon} alt="burger icon" />
-            <div className='max-w-[170px] w-full'>
-              <h3 className='text-title-black-38/90 font-lilita-one text-xl uppercase'>DELIVERY Speed</h3>
-              <p className='text-title-black-38/70 opacity-70'>Entregamos menos de 45 minutos</p>
+            <div className="max-w-[170px] w-full">
+              <h3 className="text-title-black-38/90 font-lilita-one text-xl uppercase">
+                DELIVERY Speed
+              </h3>
+              <p className="text-title-black-38/70 opacity-70">
+                Entregamos menos de 45 minutos
+              </p>
             </div>
           </div>
         </motion.div>

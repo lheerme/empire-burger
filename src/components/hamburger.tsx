@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react"
+import type { ChangeEvent } from 'react'
 
 interface HamburgerProps {
   isChecked: boolean
@@ -17,12 +17,12 @@ export function Hamburger({ isChecked, setIsChecked }: HamburgerProps) {
   }
 
   return (
-    <label 
+    <label
       htmlFor="menu_checkbox"
       className="min-[1040px]:hidden size-10 cursor-pointer p-2.5 bg-title-black-38/15 rounded-md z-[3]"
     >
-      <input 
-        type="checkbox" 
+      <input
+        type="checkbox"
         id="menu_checkbox"
         className="sr-only peer"
         checked={isChecked}
