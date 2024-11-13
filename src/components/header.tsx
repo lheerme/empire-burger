@@ -99,7 +99,7 @@ export function Header() {
               )}
               onClick={handleAnchorClick}
             >
-              <a href="#our-royalty">Cometários</a>
+              <a href="#our-royalty">Comentários</a>
             </li>
             {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
             <li
