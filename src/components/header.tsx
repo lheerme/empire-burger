@@ -56,6 +56,7 @@ export function Header() {
           )}
         >
           <ul
+            data-testid="header-nav-list"
             className={twMerge(
               'flex items-center gap-4',
               isHamburgerChecked && 'flex-col'
